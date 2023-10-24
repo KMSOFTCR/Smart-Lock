@@ -8,4 +8,129 @@ Version: 1.0
 */
 
 
-/* Estilos personalizados sección #1 */
+/* Estilos personalizados Footer */
+
+.contact_items {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #000;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.footer_contact_item {
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_footer_item {
+    color: #fff;
+    width: 40%;
+    margin-left: 6%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text_footer_item h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.text_footer_item p {
+    margin-top: 10px;
+}
+
+.img_footer_item {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.form_content_contact {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding-top: 4%;
+}
+
+.img_contenedor_1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_contenedor_1 img {
+    width: 80%;
+}
+
+.content_form_contact {
+    width: 50%;
+}
+
+.title_form_contact {
+    border-left: thick solid #000;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.title_form_contact h2 {
+    padding-left: 4%;
+    font-size: 30px;
+}
+
+.i2_contact_line {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    margin-top: 5%;
+}
+
+.btn_form_contact {
+    padding-left: 2%;
+}
+
+.i2_contact_line input {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #000;
+    height: 40px;
+    outline: none;
+}
+
+.destextarea input {
+    height: 150px !important;
+}
+
+.btn_form_contact button {
+    margin-top: 5%;
+    padding: 1% 8%;
+    background-color: #000;
+    color: #fff;
+}
+
+.footer_last_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    font-size: 30px;
+}
+
+.footer_last_section p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.img_logo_section {
+    height: 50px;
+    padding-right: 1%;
+}

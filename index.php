@@ -29,6 +29,6 @@ Template Name: Template Home
     <?php
 get_footer();
 ?>
-   <<script> 
+   <script> 
     
    </script>
