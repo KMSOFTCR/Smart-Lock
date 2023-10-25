@@ -165,6 +165,93 @@ function theme_customizer_settings($wp_customize) {
       'settings' => 'img_footer_last_section',
     )));
 
+    // Home 
+    // Section 1
+
+
+    // Section 2
+    $wp_customize->add_section('section_2_home', array(
+      'title' => 'Sección Home #2',
+      'priority' => 30
+    ));
+
+    $wp_customize->add_setting('title_section_2', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('title_section_2', array(
+      'label' => 'Titulo',
+      'section' => 'section_2_home',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('parrafo1_section_2', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('parrafo1_section_2', array(
+      'label' => 'Parrafo 1',
+      'section' => 'section_2_home',
+      'type' => 'textarea',
+    ));
+
+    $wp_customize->add_setting('parrafo2_section_2', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('parrafo2_section_2', array(
+      'label' => 'Parrafo 2',
+      'section' => 'section_2_home',
+      'type' => 'textarea',
+    ));
+
+    // Section 3
+    $wp_customize->add_section('section_3_home', array(
+      'title' => 'Sección Home #3',
+      'priority' => 30
+    ));
+
+    $wp_customize->add_setting('image_section_3', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'image_section_3', array(
+      'label' => 'Imagen',
+      'section' => 'section_3_home',
+      'settings' => 'image_section_3',
+    )));
+
+    // Section 4
+    $wp_customize->add_section('section_4_home', array(
+      'title' => 'Sección Home #4',
+      'priority' => 30
+    ));
+
+    $wp_customize->add_setting('title_section_4', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('title_section_4', array(
+      'label' => 'Titulo',
+      'section' => 'section_4_home',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('parrafo1_section_4', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('parrafo1_section_4', array(
+      'label' => 'Parrafo 1',
+      'section' => 'section_4_home',
+      'type' => 'textarea',
+    ));
 
    
 
