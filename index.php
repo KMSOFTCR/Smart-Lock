@@ -43,6 +43,8 @@ Template Name: Template Home
             <p><?php echo esc_html(get_theme_mod('parrafo1_section_4')); ?></p>
         </div>
     </div>
+
+    
     
     <?php
         get_footer();
