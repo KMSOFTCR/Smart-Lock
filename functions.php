@@ -253,7 +253,171 @@ function theme_customizer_settings($wp_customize) {
       'type' => 'textarea',
     ));
 
+    // Section 5
+    $wp_customize->add_section('section_5_home', array(
+      'title' => 'Sección Home #5',
+      'priority' => 30
+    ));
+
+    $wp_customize->add_setting('image_bg_section_5', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'image_bg_section_5', array(
+      'label' => 'Imagen de fondo',
+      'section' => 'section_5_home',
+      'settings' => 'image_bg_section_5',
+    )));
+
+    $wp_customize->add_setting('title1_section_5', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('title1_section_5', array(
+      'label' => 'Titulo 1',
+      'section' => 'section_5_home',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('parrafo1_section_5', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('parrafo1_section_5', array(
+      'label' => 'Parrafo 1',
+      'section' => 'section_5_home',
+      'type' => 'textarea',
+    ));
+
+    $wp_customize->add_setting('parrafo2_section_5', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('parrafo2_section_5', array(
+      'label' => 'Parrafo 2',
+      'section' => 'section_5_home',
+      'type' => 'textarea',
+    ));
+
+    $wp_customize->add_setting('parrafo3_section_5', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('parrafo3_section_5', array(
+      'label' => 'Parrafo 3',
+      'section' => 'section_5_home',
+      'type' => 'textarea',
+    ));
+
+    $wp_customize->add_setting('title2_section_5', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('title2_section_5', array(
+      'label' => 'Titulo 2',
+      'section' => 'section_5_home',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('parrafo4_section_5', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('parrafo4_section_5', array(
+      'label' => 'Parrafo 4',
+      'section' => 'section_5_home',
+      'type' => 'textarea',
+    ));
+
+    $wp_customize->add_setting('parrafo5_section_5', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('parrafo5_section_5', array(
+      'label' => 'Parrafo 5',
+      'section' => 'section_5_home',
+      'type' => 'textarea',
+    ));
+
+    // Section 6
+    $wp_customize->add_section('section_6_home', array(
+      'title' => 'Sección Home #6',
+      'priority' => 30
+    ));
+
+    $wp_customize->add_setting('title_section_6', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('title_section_6', array(
+      'label' => 'Titulo',
+      'section' => 'section_6_home',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('image_section_6', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'image_section_6', array(
+      'label' => 'Imagen',
+      'section' => 'section_6_home',
+      'settings' => 'image_section_6',
+    )));
+
+    $wp_customize->add_setting('parrafo1_section_6', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('parrafo1_section_6', array(
+      'label' => 'Parrafo 1',
+      'section' => 'section_6_home',
+      'type' => 'textarea',
+    ));
+
+    $wp_customize->add_setting('parrafo2_section_6', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('parrafo2_section_6', array(
+      'label' => 'Parrafo 2',
+      'section' => 'section_6_home',
+      'type' => 'textarea',
+    ));
    
+    $wp_customize->add_setting('parrafo3_section_6', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('parrafo3_section_6', array(
+      'label' => 'Parrafo 3',
+      'section' => 'section_6_home',
+      'type' => 'textarea',
+    ));
+
+    $wp_customize->add_setting('parrafo4_section_6', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('parrafo4_section_6', array(
+      'label' => 'Parrafo 4',
+      'section' => 'section_6_home',
+      'type' => 'textarea',
+    ));
 
 }
 add_action('customize_register', 'theme_customizer_settings');
