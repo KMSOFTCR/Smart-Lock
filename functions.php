@@ -477,6 +477,298 @@ function theme_customizer_settings($wp_customize) {
       'type' => 'textarea',
     ));
 
+    // FAQ
+    // Section 1
+    $wp_customize->add_section('section_1_FAQ', array(
+      'title' => 'Sección FAQ #1',
+      'priority' => 30
+    ));
+
+    $wp_customize->add_setting('img_fnd_header_h1_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'img_fnd_header_h1_FAQ', array(
+      'label' => 'Imagen fondo header',
+      'section' => 'section_1_FAQ',
+      'settings' => 'img_fnd_header_h1_FAQ',
+    )));
+
+    $wp_customize->add_setting('title_section_1_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('title_section_1_FAQ', array(
+      'label' => 'Titulo ',
+      'section' => 'section_1_FAQ',
+      'type' => 'text',
+    ));
+
+    // Section 1
+    $wp_customize->add_section('section_2_FAQ', array(
+      'title' => 'Sección FAQ #2',
+      'priority' => 30
+    ));
+
+    $wp_customize->add_setting('title_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('title_section_2_FAQ', array(
+      'label' => 'Titulo ',
+      'section' => 'section_2_FAQ',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('question_1_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('question_1_section_2_FAQ', array(
+      'label' => 'Pregunta #1 ',
+      'section' => 'section_2_FAQ',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('answer_1_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('answer_1_section_2_FAQ', array(
+      'label' => 'Respuesta #1 ',
+      'section' => 'section_2_FAQ',
+      'type' => 'textarea',
+    ));
+
+
+    $wp_customize->add_setting('question_2_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('question_2_section_2_FAQ', array(
+      'label' => 'Pregunta #2 ',
+      'section' => 'section_2_FAQ',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('answer_2_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('answer_2_section_2_FAQ', array(
+      'label' => 'Respuesta #2 ',
+      'section' => 'section_2_FAQ',
+      'type' => 'textarea',
+    ));
+
+    $wp_customize->add_setting('question_3_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('question_3_section_2_FAQ', array(
+      'label' => 'Pregunta #3 ',
+      'section' => 'section_2_FAQ',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('answer_3_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('answer_3_section_2_FAQ', array(
+      'label' => 'Respuesta #3 ',
+      'section' => 'section_2_FAQ',
+      'type' => 'textarea',
+    ));
+
+    $wp_customize->add_setting('question_4_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('question_4_section_2_FAQ', array(
+      'label' => 'Pregunta #4 ',
+      'section' => 'section_2_FAQ',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('answer_4_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('answer_4_section_2_FAQ', array(
+      'label' => 'Respuesta #4 ',
+      'section' => 'section_2_FAQ',
+      'type' => 'textarea',
+    ));
+
+    $wp_customize->add_setting('question_5_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('question_5_section_2_FAQ', array(
+      'label' => 'Pregunta #5',
+      'section' => 'section_2_FAQ',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('answer_5_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('answer_5_section_2_FAQ', array(
+      'label' => 'Respuesta #5 ',
+      'section' => 'section_2_FAQ',
+      'type' => 'textarea',
+    ));
+
+
+    $wp_customize->add_setting('question_6_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('question_6_section_2_FAQ', array(
+      'label' => 'Pregunta #6',
+      'section' => 'section_2_FAQ',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('answer_6_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('answer_6_section_2_FAQ', array(
+      'label' => 'Respuesta #6 ',
+      'section' => 'section_2_FAQ',
+      'type' => 'textarea',
+    ));
+
+    $wp_customize->add_setting('question_7_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('question_7_section_2_FAQ', array(
+      'label' => 'Pregunta #7',
+      'section' => 'section_2_FAQ',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('answer_7_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('answer_7_section_2_FAQ', array(
+      'label' => 'Respuesta #7 ',
+      'section' => 'section_2_FAQ',
+      'type' => 'textarea',
+    ));
+
+    $wp_customize->add_setting('question_8_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('question_8_section_2_FAQ', array(
+      'label' => 'Pregunta #8',
+      'section' => 'section_2_FAQ',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('answer_8_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('answer_8_section_2_FAQ', array(
+      'label' => 'Respuesta #8 ',
+      'section' => 'section_2_FAQ',
+      'type' => 'textarea',
+    ));
+
+
+    $wp_customize->add_setting('question_9_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('question_9_section_2_FAQ', array(
+      'label' => 'Pregunta #9',
+      'section' => 'section_2_FAQ',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('answer_9_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('answer_9_section_2_FAQ', array(
+      'label' => 'Respuesta #9 ',
+      'section' => 'section_2_FAQ',
+      'type' => 'textarea',
+    ));
+
+    
+    $wp_customize->add_setting('question_10_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('question_10_section_2_FAQ', array(
+      'label' => 'Pregunta #10',
+      'section' => 'section_2_FAQ',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('answer_10_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('answer_10_section_2_FAQ', array(
+      'label' => 'Respuesta #10 ',
+      'section' => 'section_2_FAQ',
+      'type' => 'textarea',
+    ));
+
+    $wp_customize->add_setting('question_11_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('question_11_section_2_FAQ', array(
+      'label' => 'Pregunta #11',
+      'section' => 'section_2_FAQ',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('answer_11_section_2_FAQ', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('answer_11_section_2_FAQ', array(
+      'label' => 'Respuesta #11 ',
+      'section' => 'section_2_FAQ',
+      'type' => 'textarea',
+    ));
+
 
     // about us 
     // Section 1

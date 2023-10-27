@@ -434,3 +434,81 @@ body {
     font-size: 45px;
     margin: 0.5%;
 }
+
+.content_in_header_FAQ {
+    margin-top: 450px;
+    padding-left: 5%;
+}
+
+.content_in_header_h2_FAQ {
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.FAQ_content_main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 0%;
+}
+
+.Title_questions_FAQ {
+    width: 90%;
+    border-left: solid 4px #000;
+}
+
+.Title_questions_FAQ h2 {
+    padding-left: 1%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.questions_FAQ_acordeon {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.accordion-item {
+    margin-bottom: 5px;
+    border-bottom: solid 1px #000;
+}
+
+.accordion-button {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+
+/* Estilos para los iconos */
+
+.accordion-button::before {
+    content: "+";
+    font-size: 40px;
+    padding-right: 1%;
+}
+
+.accordion-item.active .accordion-button::before {
+    content: "-";
+    padding-right: 1%;
+}
