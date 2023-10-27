@@ -15,8 +15,47 @@ Template Name: Template Home
 
 <body>
     <header>
-        <div>
-            
+        <div class="header-background_h1"
+            style="background: linear-gradient(to top, #9f9f9f30, #d5d5d559), url(<?php echo get_theme_mod('img_fnd_header_h1'); ?>) no-repeat; background-position: center center; background-size: auto;">
+            <div class="content_menu_desktop">
+                <div class="div_logo_header">
+                    <img src="<?php echo esc_html(get_theme_mod('logo_smartlock_desktop')); ?>">
+                </div>
+                <nav>
+                    <?php
+                            if (has_nav_menu('primary-menu')) {
+                                wp_nav_menu(array(
+                                    'theme_location' => 'primary-menu',
+                                    'container' => false,
+                                    'menu_class' => 'primary-menu'
+                                ));
+                            }
+                        ?>
+                </nav>
+            </div>
+            <div class="content_in_header">
+                <h2 class="content_in_header_h2_1">
+                    <?php
+                    $title = esc_html(get_theme_mod('title_header_section_1'));
+                    $boldedWord = 'Electrónicos'; // Replace with the word you want to bold
+                    echo str_replace($boldedWord, '<span style="font-weight: bold;">' . $boldedWord . '</span>', $title);
+                ?>
+                </h2>
+                <h2 class="content_in_header_h2_2">
+                    <?php
+                    $title = esc_html(get_theme_mod('title_header_section_2'));
+                    $boldedWord = 'Smart Lock'; // Replace with the word you want to bold
+                    echo str_replace($boldedWord, '<span style="font-weight: bold;">' . $boldedWord . '</span>', $title);
+                ?>
+                </h2>
+                <h2 class="content_in_header_h2_3">
+                    <?php
+                    $title = esc_html(get_theme_mod('title_header_section_3'));
+                    $boldedWord = 'RFID'; // Replace with the word you want to bold
+                    echo str_replace($boldedWord, '<span style="font-weight: bold;">' . $boldedWord . '</span>', $title);
+                ?>
+                </h2>
+            </div>
         </div>
     </header>
     <div class="section_2_home">
@@ -137,6 +176,6 @@ Template Name: Template Home
     <?php
         get_footer();
     ?>
-   <script> 
-    
-   </script>
+    <script>
+
+    </script>

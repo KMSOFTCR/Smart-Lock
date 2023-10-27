@@ -167,7 +167,65 @@ function theme_customizer_settings($wp_customize) {
 
     // Home 
     // Section 1
+    $wp_customize->add_section('section_1_home', array(
+      'title' => 'Sección Home #1',
+      'priority' => 30
+    ));
 
+    $wp_customize->add_setting('img_fnd_header_h1', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'img_fnd_header_h1', array(
+      'label' => 'Imagen fondo header',
+      'section' => 'section_1_home',
+      'settings' => 'img_fnd_header_h1',
+    )));
+
+    $wp_customize->add_setting('logo_smartlock_desktop', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'logo_smartlock_desktop', array(
+      'label' => 'Logo Desktop',
+      'section' => 'section_1_home',
+      'settings' => 'logo_smartlock_desktop',
+    )));
+
+    $wp_customize->add_setting('title_header_section_1', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('title_header_section_1', array(
+      'label' => 'Titulo 1',
+      'section' => 'section_1_home',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('title_header_section_2', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('title_header_section_2', array(
+      'label' => 'Titulo 2',
+      'section' => 'section_1_home',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('title_header_section_3', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('title_header_section_3', array(
+      'label' => 'Titulo 3',
+      'section' => 'section_1_home',
+      'type' => 'text',
+    ));
 
     // Section 2
     $wp_customize->add_section('section_2_home', array(
