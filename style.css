@@ -23,11 +23,14 @@ p {
     font-size: 22px;
 }
 
+<<<<<<< Updated upstream
 body {
     margin: 0;
     padding: 0;
 }
 
+=======
+>>>>>>> Stashed changes
 
 /* Estilos personalizados Footer */
 
@@ -289,6 +292,7 @@ body {
 
 .section_6_home_text_content_container {
     font-size: 20px;
+<<<<<<< Updated upstream
 }
 
 .header-background_h1 {
@@ -348,4 +352,6 @@ body {
     color: #fff;
     font-size: 45px;
     margin: 0.5%;
+=======
+>>>>>>> Stashed changes
 }
