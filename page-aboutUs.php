@@ -15,8 +15,27 @@ Template Name: Template about Us
 
 <body>
     <header>
-        <div>
-            
+        <div class="header-background_h1"
+            style="background: linear-gradient(to top, #9f9f9f30, #d5d5d559), url(<?php echo get_theme_mod('img_fnd_header_h1_FAQ'); ?>) no-repeat; background-position: center center; background-size: auto;">
+            <div class="content_menu_desktop">
+                <div class="div_logo_header">
+                    <img src="<?php echo esc_html(get_theme_mod('logo_smartlock_desktop')); ?>">
+                </div>
+                <nav>
+                    <?php
+                            if (has_nav_menu('primary-menu')) {
+                                wp_nav_menu(array(
+                                    'theme_location' => 'primary-menu',
+                                    'container' => false,
+                                    'menu_class' => 'primary-menu'
+                                ));
+                            }
+                        ?>
+                </nav>
+            </div>
+            <div class="content_in_header_FAQ">
+                <h2 class="content_in_header_h2_FAQ"><?php echo get_theme_mod('title_section_1_FAQ'); ?></h2>
+            </div>
         </div>
     </header>
     <div class="section_1_about_us">
@@ -57,7 +76,8 @@ Template Name: Template about Us
                         <?php echo esc_html(get_theme_mod('parrafo1_section_2_about_us'));?>
                     </p>
                     <div class="section_2_contact_btn">
-                        <a href="<?php echo esc_html(get_theme_mod('url_btn_section_2_about_us')); ?>"><?php echo esc_html(get_theme_mod('text_btn_section_2_about_us')); ?></a>
+                        <a
+                            href="<?php echo esc_html(get_theme_mod('url_btn_section_2_about_us')); ?>"><?php echo esc_html(get_theme_mod('text_btn_section_2_about_us')); ?></a>
                     </div>
                 </div>
             </div>
@@ -81,6 +101,6 @@ Template Name: Template about Us
     <?php
         get_footer();
     ?>
-   <script> 
-    
-   </script>
+    <script>
+
+    </script>
