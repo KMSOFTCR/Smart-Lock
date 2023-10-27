@@ -291,7 +291,7 @@ body {
     font-size: 20px;
 }
 
-/* Abbout Us Page */
+/* about Us Page */
 
 /* Section 1 */
 .section_1_about_us {
@@ -299,18 +299,80 @@ body {
     padding: 5% 10%;
 }
 
-.section_1_abbout_us_title_container {
+.section_1_about_us_title_container {
     border-left: solid 4px #000;
     padding: 1% 0 1% 3%;
 }
 
-.section_1_abbout_us_title {
+.section_1_about_us_title {
     white-space: nowrap;
 }
 
-.section_2_abbout_us_text_content_container {
+.section_1_about_us_text_content_container {
     font-size: 20px;
     padding: 0 3.5%;
+}
+
+.section_2_about_us_img_container {
+    width: 100%;
+    height: 500px;
+}
+
+.section_2_about_us_text_content_container {
+    display: flex;
+    height: 100%;
+    color: #fff;
+    align-items: center;
+}
+
+.section_2_about_us_title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.section_2_info_container {
+    padding: 0 3%;
+    & p {
+        padding-top: 3%;
+    }
+}
+
+.section_2_about_us_text_content_container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.section_2_contact_btn {
+    margin-top: 9%;
+    & a {
+        text-decoration: none;
+        background-color: #000;
+        color: #fff;
+        padding: 1.5% 6%;
+        font-size: x-large;
+    }
+}
+
+.section_3_about_us {
+    display: flex;
+    align-items: start;
+    background-color: #ffff;
+    padding: 5% 10%;
+}
+
+.section_3_about_us_title_container {
+    border-left: solid 4px #000;
+    padding: 1% 0 1% 3%;
+    margin-right: 15%;
+}
+
+.section_3_about_us_title {
+    white-space: nowrap;
+}
+
+.section_3_about_us_text_content_container {
+    font-size: 20px;
 }
 
 /* Header */
