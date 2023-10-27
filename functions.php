@@ -419,6 +419,36 @@ function theme_customizer_settings($wp_customize) {
       'type' => 'textarea',
     ));
 
+
+    // Abbout us 
+    // Section 1
+    $wp_customize->add_section('section_1_abbout_us', array(
+      'title' => 'Sección Sobre Nosotros #1',
+      'priority' => 30
+    ));
+
+    $wp_customize->add_setting('title_section_1_abbout_us', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('title_section_1_abbout_us', array(
+      'label' => 'Titulo',
+      'section' => 'section_1_abbout_us',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('parrafo1_section_1_abbout_us', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('parrafo1_section_1_abbout_us', array(
+      'label' => 'Parrafo 1',
+      'section' => 'section_1_abbout_us',
+      'type' => 'textarea',
+    ));
+
 }
 add_action('customize_register', 'theme_customizer_settings');
 
