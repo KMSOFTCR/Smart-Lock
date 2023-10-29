@@ -16,6 +16,7 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 function theme_register_menus() {
   register_nav_menus(array(
     'primary-menu' => 'Menú Principal',
+    'main_nav' => 'Menú Movil',
     'footer-menu' => 'Menú del Pie de Página'
   ));
 }
@@ -478,7 +479,7 @@ function theme_customizer_settings($wp_customize) {
     ));
 
     // FAQ
-    // Section 1
+    // Section 1 FQA
     $wp_customize->add_section('section_1_FAQ', array(
       'title' => 'Sección FAQ #1',
       'priority' => 30
@@ -506,7 +507,7 @@ function theme_customizer_settings($wp_customize) {
       'type' => 'text',
     ));
 
-    // Section 1
+    // Section 2 FQA
     $wp_customize->add_section('section_2_FAQ', array(
       'title' => 'Sección FAQ #2',
       'priority' => 30
@@ -768,6 +769,52 @@ function theme_customizer_settings($wp_customize) {
       'section' => 'section_2_FAQ',
       'type' => 'textarea',
     ));
+
+    // Contact
+    // Section 1 Contact
+    $wp_customize->add_section('section_1_Contact', array(
+      'title' => 'Sección Contact #1',
+      'priority' => 30
+    ));
+
+    $wp_customize->add_setting('img_fnd_header_h1_Contact', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'img_fnd_header_h1_Contact', array(
+      'label' => 'Imagen fondo header',
+      'section' => 'section_1_Contact',
+      'settings' => 'img_fnd_header_h1_Contact',
+    )));
+
+    $wp_customize->add_setting('title_section_1_Contact', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('title_section_1_Contact', array(
+      'label' => 'Titulo ',
+      'section' => 'section_1_Contact',
+      'type' => 'text',
+    ));
+
+    $wp_customize->add_section('section_2_Contact', array(
+      'title' => 'Sección Contact #2',
+      'priority' => 30
+    ));
+
+    $wp_customize->add_setting('title_section_2_Contact', array(
+      'default' => '',
+      'transport' => 'refresh',
+    ));
+  
+    $wp_customize->add_control('title_section_2_Contact', array(
+      'label' => 'Titulo sección',
+      'section' => 'section_2_Contact',
+      'type' => 'text',
+    ));
+
 
 }
 add_action('customize_register', 'theme_customizer_settings');
