@@ -11,6 +11,7 @@ Template Name: Template FAQ
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title('|', true, 'right'); ?></title>
     <?php wp_head(); ?>
+    <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -33,6 +34,31 @@ Template Name: Template FAQ
                         ?>
                 </nav>
             </div>
+            <nav class="navbar">
+                <div class="logo_header">
+                    <a href="#" class="logo"><img src="<?php echo esc_html(get_theme_mod('logo_smartlock_desktop')); ?>"
+                            style="
+    width: 150px;"></a>
+                    <button class=" navbar_toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <ul class="main_nav">
+                    <li>
+                        <a href="#" class="nav_links">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav_links">SOBRE NOSOTROS</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav_links">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav_links">CONTACTO</a>
+                    </li>
+                </ul>
+
+            </nav>
             <div class="content_in_header_FAQ">
                 <h2 class="content_in_header_h2_FAQ"><?php echo get_theme_mod('title_section_1_FAQ'); ?></h2>
             </div>
@@ -98,21 +124,11 @@ Template Name: Template FAQ
         get_footer();
     ?>
 
-    <script>
-    // JavaScript para agregar funcionalidad al acordeón
-    const accordionItems = document.querySelectorAll('.accordion-item');
+    <script type="text/javascript">
+    const navToggle = document.querySelector(".navbar_toggle");
+    const links = document.querySelector(".main_nav");
 
-    accordionItems.forEach(item => {
-        const button = item.querySelector('.accordion-button');
-        const content = item.querySelector('.accordion-content');
-
-        button.addEventListener('click', () => {
-            item.classList.toggle('active');
-            if (item.classList.contains('active')) {
-                content.style.display = 'block';
-            } else {
-                content.style.display = 'none';
-            }
-        });
-    });
+    navToggle.addEventListener('click', function() {
+        links.classList.toggle("show_nav");
+    })
     </script>
